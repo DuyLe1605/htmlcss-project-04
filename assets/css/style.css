@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --bgc-1: #fffaf5;
+    --bgc-2: #fff6ed;
+    --font-hl: "Sora", serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/* Common */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
