@@ -736,7 +736,6 @@ a {
     position: relative;
     margin: 0 16px;
     border-radius: 130px;
-    overflow: hidden;
 }
 .staff-item__img-wrap::before {
     width: 100%;
@@ -763,6 +762,7 @@ a {
     width: 100%;
     position: relative;
     z-index: 1;
+    border-radius: inherit;
 }
 
 .staff-item__title,
