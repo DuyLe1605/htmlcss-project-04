@@ -80,10 +80,16 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
         <!-- Font Sora + Poppins -->
+        s
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
+        <!-- AOS library -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
         />
         <!-- reset css -->
@@ -91,5 +97,496 @@
         <!-- css -->
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="#!"
+                        ><img src="./assets/img/Logo.svg" alt="" class="logo"
+                    /></a>
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"
+                                    >Services & Rates</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Reviews</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"
+                                    >Contacts us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Heaader Action -->
+                    <div class="header-action">
+                        <a href="#!" class="header-action__link">Sign in</a>
+                        <a href="#!" class="btn header-action__btn"
+                            ><span>Sign up</span></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Hero m3dia -->
+                    <div class="hero__media">
+                        <!-- big img -->
+                        <div
+                            class="hero__img-wrap"
+                            data-aos="fade-right"
+                            data-aos-once="true"
+                        >
+                            <img
+                                src="./assets/img/hero__img-1.svg"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <!-- decor -->
+                            <img
+                                src="./assets/img/hero__decor-2.svg"
+                                alt=""
+                                class="hero__decor hero__decor-right"
+                            />
+                            <img
+                                src="./assets/img/hero__decor-1.svg"
+                                alt=""
+                                class="hero__decor hero__decor-left"
+                            />
+                        </div>
+                        <!-- small  img -->
+                        <div
+                            class="hero__img-wrap hero__img-wrap-small"
+                            data-aos="fade-up-left"
+                            data-aos-once="true"
+                        >
+                            <img
+                                src="./assets/img/hero__img-2.svg"
+                                alt=""
+                                class="hero__img hero__img-small"
+                            />
+                        </div>
+                        <!-- Hero list -->
+                        <div
+                            class="hero__list"
+                            data-aos="fade-up-right"
+                            data-aos-once="true"
+                        >
+                            <!-- item 1 -->
+                            <div class="hero__list-item">
+                                <img
+                                    src="./assets/img/hero___mini-2.svg"
+                                    alt=""
+                                    class="hero__list-item__thumb hero__mini-1"
+                                />
+                                <div class="hero__list-item__info">
+                                    <p class="hero__list-item__title">
+                                        Pet Health
+                                    </p>
+                                    <div
+                                        class="hero__list-item__skeleton"
+                                    ></div>
+                                    <div
+                                        class="hero__list-item__skeleton"
+                                    ></div>
+                                </div>
+                            </div>
+                            <!-- hr  -->
+                            <div class="hero__list-item__separate"></div>
+                            <!-- item 2 -->
+                            <div class="hero__list-item">
+                                <img
+                                    src="./assets/img/hero___mini-1.svg"
+                                    alt=""
+                                    class="hero__list-item__thumb hero__mini-2"
+                                />
+                                <div class="hero__list-item__info">
+                                    <p class="hero__list-item__title">
+                                        Pet Care
+                                    </p>
+                                    <div
+                                        class="hero__list-item__skeleton"
+                                    ></div>
+                                    <div
+                                        class="hero__list-item__skeleton"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            Established & Trusted Pet Care Service
+                        </h1>
+                        <p class="hero__desc">
+                            Discover a wide variety of Pawsitive services to
+                            choose from, including daycare, private walks,
+                            office duty and spa.
+                        </p>
+                        <div class="hero__row">
+                            <a href="#!" class="btn hero__cta-btn btn--primary"
+                                >Book a Meet
+                                <span class="btn__icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="5"
+                                        height="6"
+                                        viewBox="0 0 5 6"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M1.48584 0.5L3.98584 3L1.48584 5.5"
+                                            stroke="#FD5056"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#!" class="hero__cta-link"
+                                >Schedule a Call</a
+                            >
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- Main -->
+        <main style="height: 10000px">
+            <!-- About -->
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <section class="about__content">
+                            <p class="about__label">// About //</p>
+                            <h2 class="section__heading about__heading">
+                                Best Agency For Your Pet.
+                            </h2>
+                            <p class="section__desc about__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="about__checklist">
+                                <span class="about__check-item"
+                                    >Certified Groomer</span
+                                >
+                                <span class="about__check-item"
+                                    >Animal Lover</span
+                                >
+                                <span class="about__check-item"
+                                    >14+ Years Experience</span
+                                >
+                                <span class="about__check-item"
+                                    >Pet Parent Of 3 Dogs</span
+                                >
+                            </div>
+                        </section>
+                        <div class="about__media">
+                            <!-- About card -->
+                            <div class="about__card">
+                                <b class="about__card-title">20+</b>
+                                <p class="about__card-desc">Years Experience</p>
+                                <img
+                                    src="./assets/img/about-card-mini.svg"
+                                    alt=""
+                                    class="about__card-mini"
+                                />
+                            </div>
+                            <!-- About image wrapper -->
+                            <figure class="about__img-wrap">
+                                <img
+                                    src="./assets/img/About-Man.svg"
+                                    alt=""
+                                    class="about__img"
+                                />
+                                <img
+                                    src="./assets/img/about-img-effect.svg"
+                                    alt=""
+                                    class="about__img-effect"
+                                />
+                            </figure>
+                        </div>
+                        <div class="about__media">
+                            <figure
+                                class="about__img-wrap about__img-wrap-bottom"
+                            >
+                                <img
+                                    src="./assets/img/About-dog.svg"
+                                    alt=""
+                                    class="about__img about__img-bottom"
+                                />
+                                <div>
+                                    <img
+                                        src="./assets/img/about-media-decor-1.svg"
+                                        alt=""
+                                        class="about__decor"
+                                    />
+                                    <img
+                                        src="./assets/img/about-media-decor-2.svg"
+                                        alt=""
+                                        class="about__decor"
+                                    />
+                                    <img
+                                        src="./assets/img/about-media-decor-3.svg"
+                                        alt=""
+                                        class="about__decor"
+                                    />
+                                    <img
+                                        src="./assets/img/about-media-decor-4.svg"
+                                        alt=""
+                                        class="about__decor"
+                                    />
+                                    <img
+                                        src="./assets/img/about-media-decor-5.svg"
+                                        alt=""
+                                        class="about__decor"
+                                    />
+                                    <img
+                                        src="./assets/img/about-media-decor-6.svg"
+                                        alt=""
+                                        class="about__decor"
+                                    />
+                                </div>
+                            </figure>
+                        </div>
+                        <section class="about__content">
+                            <h2 class="section__heading about__heading-bottom">
+                                Taking A Vacation? So Is Your Pet.
+                            </h2>
+                            <p class="section__desc about__desc-bottom">
+                                We offer long-term and short-term boarding.
+                                Every dog has its own private, spacious room and
+                                daily individual time in our large play yard.
+                            </p>
+                            <div class="tab">
+                                <ul class="tab__list">
+                                    <li class="tab__item tab__item--active">
+                                        <img
+                                            src="./assets/img/tab-item-1.svg"
+                                            alt=""
+                                            class="tab__img"
+                                        />
+                                        <p class="tab__title">Pet Boarding</p>
+                                    </li>
+                                    <li class="tab__item">
+                                        <img
+                                            src="./assets/img/tab-item-2.svg"
+                                            alt=""
+                                            class="tab__img"
+                                        />
+                                        <p class="tab__title">Pet Daycare</p>
+                                    </li>
+                                    <li class="tab__item">
+                                        <img
+                                            src="./assets/img/tab-item-3.svg"
+                                            alt=""
+                                            class="tab__img"
+                                        />
+                                        <p class="tab__title">Pet Transport</p>
+                                    </li>
+                                </ul>
+
+                                <div class="tab__content">
+                                    <!-- Tab content -->
+                                    <div
+                                        class="tab__content-item tab__content-item--active"
+                                    >
+                                        <p class="tab__content-desc">
+                                            While you're on holiday, here's
+                                            where your furry friends will spend
+                                            their time.
+                                        </p>
+                                        <a href="#!" class="tab__content-more"
+                                            >View more</a
+                                        >
+                                    </div>
+                                    <!-- Tab content -->
+                                    <div class="tab__content-item">
+                                        <p class="tab__content-desc">
+                                            While you're on holiday, here's
+                                            where your furry friends will spend
+                                            their time.
+                                        </p>
+                                        <a href="#!" class="tab__content-more"
+                                            >View more</a
+                                        >
+                                    </div>
+                                    <!-- Tab content -->
+                                    <div class="tab__content-item">
+                                        <p class="tab__content-desc">
+                                            While you're on holiday, here's
+                                            where your furry friends will spend
+                                            their time.
+                                        </p>
+                                        <a href="#!" class="tab__content-more"
+                                            >View more</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- Service -->
+            <section class="service">
+                <div class="container">
+                    <section class="service__top">
+                        <p class="section__desc">What we do for you?</p>
+                        <h2 class="section__heading service__top-heading">
+                            Our Services
+                        </h2>
+                    </section>
+                    <div class="service__body">
+                        <div class="service__col">
+                            <!-- Item 1 -->
+                            <article class="service-item">
+                                <h3 class="service-item__heading">
+                                    Puppy Sitting
+                                </h3>
+                                <p class="service-item__desc section__desc">
+                                    Helping your new pup to be a good boy or
+                                    girl isn’t always easy, but we’re here to
+                                    help.
+                                </p>
+                                <a href="#!" class="service-item__link"
+                                    >Read More<img
+                                        src="./assets/img/service-item-icon.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                /></a>
+                            </article>
+
+                            <!-- Item 2 -->
+                            <article class="service-item">
+                                <h3 class="service-item__heading">
+                                    Dog Walking
+                                </h3>
+                                <p class="service-item__desc section__desc">
+                                    Choose from a 30, 45, or 60-minute visit to
+                                    give your pet their daily dose of
+                                    fun-filled.
+                                </p>
+                                <a href="#!" class="service-item__link"
+                                    >Read More<img
+                                        src="./assets/img/service-item-icon.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                /></a>
+                            </article>
+
+                            <!-- Item 3 -->
+                            <article class="service-item">
+                                <h3 class="service-item__heading">
+                                    Pet Sitting
+                                </h3>
+                                <p class="service-item__desc section__desc">
+                                    While you’re away we can make sure your pet
+                                    has all the food, water, exercise, and, of
+                                    course.
+                                </p>
+                                <a href="#!" class="service-item__link"
+                                    >Read More<img
+                                        src="./assets/img/service-item-icon.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                /></a>
+                            </article>
+                        </div>
+                        <div class="service__col">
+                            <figure class="service__media">
+                                <img
+                                    src="./assets/img/service-pet.png"
+                                    alt=""
+                                    class="service__img"
+                                />
+                            </figure>
+                            <div class="service__cta-wrap">
+                                <a href="#!" class="btn service__cta"
+                                    ><span>View All Services</span></a
+                                >
+                            </div>
+                        </div>
+                        <div class="service__col">
+                            <!-- Item 1 -->
+                            <article class="service-item">
+                                <h3 class="service-item__heading">
+                                    Overnight Care
+                                </h3>
+                                <p class="service-item__desc section__desc">
+                                    If you’re away for the night, we can stay
+                                    the night or stop by in the evening and
+                                    morning.
+                                </p>
+                                <a href="#!" class="service-item__link"
+                                    >Read More<img
+                                        src="./assets/img/service-item-icon.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                /></a>
+                            </article>
+
+                            <!-- Item 2 -->
+                            <article class="service-item">
+                                <h3 class="service-item__heading">Pet Taxi</h3>
+                                <p class="service-item__desc section__desc">
+                                    Does your pet need a lift to the groomers,
+                                    vet, or dog park? We’ve got their tail
+                                    covered.
+                                </p>
+                                <a href="#!" class="service-item__link"
+                                    >Read More<img
+                                        src="./assets/img/service-item-icon.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                /></a>
+                            </article>
+
+                            <!-- Item 3 -->
+                            <article class="service-item">
+                                <h3 class="service-item__heading">
+                                    Pet Medical Admin
+                                </h3>
+                                <p class="service-item__desc section__desc">
+                                    Our team of experienced professionals can
+                                    help with everything from pills to
+                                    injections.
+                                </p>
+                                <a href="#!" class="service-item__link"
+                                    >Read More<img
+                                        src="./assets/img/service-item-icon.svg"
+                                        alt=""
+                                        class="service-item__icon"
+                                /></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
